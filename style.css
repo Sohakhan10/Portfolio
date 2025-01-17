@@ -1,0 +1,220 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f5f7; /* Light gray background for subtle contrast */
+    color: #333; /* Dark gray for text */
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  /* Header */
+  header {
+    background: #1e3a66; /* Navy blue for professionalism */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #00b4d8; /* Teal accent color */
+  }
+  
+  /* About Section */
+  #about {
+    padding: 60px 0;
+    background: white;
+    text-align: center;
+    border-top: 3px solid #1e3a66; /* Adds a visual separator */
+  }
+  
+  #about h2 {
+    font-size: 2.2rem;
+    color: #1e3a66;
+    margin-bottom: 15px;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 60px 0;
+    background: #f4f5f7;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a66;
+  }
+  
+  .project {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid #00b4d8;
+  }
+  
+  .project:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .project h3 {
+    font-size: 1.8rem;
+    color: #1e3a66;
+  }
+  
+  .project p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 60px 0;
+    background: #1e3a66;
+    color: white;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #234779; /* Slightly lighter navy blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #f4f5f7;
+    color: #333;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: 2px solid #00b4d8; /* Teal accent for focus */
+  }
+  
+  form button {
+    background: #00b4d8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background: #0284a8; /* Darker teal for hover */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #1e3a66;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    .project {
+      margin: 20px 0;
+    }
+  
+    form {
+      padding: 20px;
+    }
+  }
+  
+    
